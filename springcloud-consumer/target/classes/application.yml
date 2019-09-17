@@ -1,0 +1,13 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: user-consumer #不要使用下划线
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+eureka:
+  client:
+    registerWithEureka: true #不注册到Eureka,不在注册中心显示
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka
